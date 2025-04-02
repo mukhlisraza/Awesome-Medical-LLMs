@@ -30,7 +30,3 @@ We welcome contributions to this repository! If you know of any other relevant m
 ## Disclaimer
 
 The information in this repository is intended for research purposes only. It is crucial to verify the licensing terms and intended use cases of each model before utilizing them in any application.
-
-## License
-
-[Specify the license for your repository, e.g., MIT License]
