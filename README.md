@@ -1,2 +1,36 @@
 # Awesome-Medical-LLMs
-A curated list of Large Language Models (LLMs) fine-tuned for the medical domain, along with links to their repositories, key information, and intended use cases. This repository aims to provide a centralized resource for researchers and developers interested in leveraging and contributing to the advancement of medical LLMs.
+
+A curated list of Large Language Models (LLMs) specifically fine-tuned for the medical domain.
+
+## Introduction
+
+Large Language Models (LLMs) have shown remarkable potential in various fields, and the medical domain is no exception. Fine-tuning these models on medical data can lead to powerful tools for assisting medical professionals, aiding in research, and improving patient care. This repository provides a collection of publicly available medical LLMs to help researchers easily discover and utilize these valuable resources.
+
+## LLM Repositories
+
+Here's a list of fine-tuned medical LLMs, along with links to their repositories and relevant details:
+
+| Model Name/Project | GitHub Repository Link | Base Model (if known) | Key Fine-Tuning Data | Primary Intended Use Case(s) | Reported Evaluation Metrics | License (if identified) |
+|---|---|---|---|---|---|---|
+| LLM-Medical-Finetuning (Shekswess) | [https://github.com/Shekswess/LLM-Medical-Finetuning](https://github.com/Shekswess/LLM-Medical-Finetuning) | Mistral, Llama2, Llama3, Gemma | Medical Meadow Wikidoc, Medquad | Code for fine-tuning LLMs on medical data; pre-trained models available on Hugging Face | Training loss charts | Not explicitly stated in repository; Apache-2.0 for Llama-3-8b model on Hugging Face |
+| Me-LLaMA (BIDS-Xu-Lab) | [https://github.com/BIDS-Xu-Lab/Me-LLaMA](https://github.com/BIDS-Xu-Lab/Me-LLaMA) | LLAMA2 (13B/70B), LLaMA3-8B | PubMed papers/abstracts, medical guidelines | Medical NLP research (not for clinical decision-making without validation) | PUBMEDQA, MedQA, MedMCQA, EmrQA, i2b2, DDI2013, hoc, MTSample | Models: PhysioNet (non-commercial); Code: MIT; Output redistribution prohibited |
+| Awesome-Medical-Large-Language-Models (burglarhobbit) | [https://github.com/burglarhobbit/Awesome-Medical-Large-Language-Models](https://github.com/burglarhobbit/Awesome-Medical-Large-Language-Models) | Various | Curated list of papers and models | Directory of medical LLM resources | N/A (Curated list) | CCO-1.0 |
+| Medical_LLM (KatherLab) BiMediX (mbzuai-oryx) | [https://github.com/KatherLab/Medical_LLM](https://github.com/KatherLab/Medical_LLM) [https://github.com/mbzuai-oryx/BiMediX](https://github.com/mbzuai-oryx/BiMediX) | Llama 2 Mixtral-8x | Medical imaging and tabular reports BiMed1.3 7B (Arabic-English bilingual instruction set) | Pipeline for processing, interpreting, and utilizing medical data using LLMs Bilingual (English/Arabic) medical interactions, question answering multi-turn chats | Validation scripts PubMedQA, MedMCQA, MedQA, Medical MMLU (outperforms other models) | MIT License CC-BY-NC-SA 4.0 (Non-Commercial) |
+| LLM for Healthcare (Ilm-healthcare) (thedatasense) | [https://github.com/thedatasense/llm-healthcare](https://github.com/thedatasense/llm-healthcare) | Various | Sample text datasets for training and evaluation | Evaluating and using LLMs in healthcare; educational notebooks and robustness experiments | Performance monitoring tools | Apache-2.0 |
+| healthcare-LLM-as-a-Judge (aws-samples) | [https://github.com/aws-samples/healthcare-LLM-as-a-Judge](https://github.com/aws-samples/healthcare-LLM-as-a-Judge) | AWS Bedrock models | MIMIC-CXR dataset, test datasets | Evaluating healthcare GenAI applications, radiology report summarization | Correctness, completeness, helpfulness, logical coherence faithfulness | MIT-0 license |
+| Hippocrates (cyberiada) | [https://github.com/cyberiada/Hippocrates/](https://github.com/cyberiada/Hippocrates/) | LLAMA2 7B, Mistral 7B | Medical Guidelines PMC-Patients, PubMedQA-contexts, MedQA-train IT, iCliniq-10k | Medical reasoning research; aims to democratize medical AI | Accuracy on MedMCQA, PubMedQA, MedQA, USMLE steps (outperforms other open models) | Framework: Open-source; Website: CC BY-SA 4.0 |
+| Clinical-LLM-Fine Tuning-Hands-On (baeseongsu) | [https://github.com/baeseongsu/Clinical-LLM-FineTuning-HandsOn](https://github.com/baeseongsu/Clinical-LLM-FineTuning-Hands-On) | Various | Likely clinical domain-specific data (not explicitly detailed in overview) | Hands-on tutorials for fine-tuning LLMs in the clinical domain | Evaluation metrics (covered in materials) | MIT license |
+| CLUE (TIO-IKIM) | [https://github.com/TIO-IKIM/CLUE](https://github.com/TIO-IKIM/CLUE) | Various | MIMIC IV notes, MedNLI, MeQSum, Problem | Benchmark for evaluating clinical language | Performance scores on 6 clinical tasks | N/A (Benchmark) |
+| automated-clinical-coding-llm (anand-subu) LLM-for-Clinical (Dragon-Wu) Med-LLaMA3-8B (YBXL) AdaptLLM /medicine-LLM | [https://github.com/anand-subu/automated-clinical-coding-llm](https://github.com/anand-subu/automated-clinical-coding-llm) [https://github.com/Dragon-Wu/LLM-for-Clinical](https://github.com/Dragon-Wu/LLM-for-Clinical) [https://huggingface.co/YBXL/Med-LLaMA3-8B](https://huggingface.co/YBXL/Med-LLaMA3-8B) [https://huggingface.co/AdaptLLM/medicine-LLM](https://huggingface.co/AdaptLLM/medicine-LLM) | GPT-3.5/GPT-4, Llama-2-70B Chat Various LLaMA3-8 B LLaMA-1-7B, LLaMA-1-13B, LLaMA-2-Chat, LLaMA3-8B | List Summarization, LongHealt h Spanish medical notes (translated to English) External medical knowledge and historical questions Open-sourced medical data (books, literature, guidelines) Transformed pre-training corpora into reading comprehension texts | Understanding of LLMs Automated clinical coding using LLM-guided tree search Enhancing LLMs performance on clinical questions, especially in non-English scenarios General medical language model Domain-specific models for biomedicine, finance, and law; includes base and chat | N/A (Implementation of algorithm) N/A (Research framework) N/A (Model hosted on Hugging Face) Performance compared to other domain-specific LLMs (results in paper) | N/A N/A License details on model card (unavailable in provided text) N/A (Models hosted on Hugging Face) |
+
+## Contributing
+
+We welcome contributions to this repository! If you know of any other relevant medical LLMs or have updates to the existing information, please feel free to submit a pull request.
+
+## Disclaimer
+
+The information in this repository is intended for research purposes only. It is crucial to verify the licensing terms and intended use cases of each model before utilizing them in any application.
+
+## License
+
+[Specify the license for your repository, e.g., MIT License]
